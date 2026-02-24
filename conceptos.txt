@@ -1,0 +1,24 @@
+legal:
+transportes nacionales.
+mascotas exóticas y documentación.
+
+--
+
+requiere actividades físicas.
+edad de la mascota.
+
+---
+
+parcela.
+establo.
+cuadra.
+gallinero.
+jaulas.
+habitación.
+piso.
+casa.
+
+----
+
+A través de méritos y reseñas, reduce las comisiones hasta un x%
+
