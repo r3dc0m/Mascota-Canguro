@@ -1,11 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="scripts/main.js" defer></script>
+    <title>Mascota Canguro</title>
 </head>
+
 <body>
-    
+    <div class="bg">
+        <video autoplay muted loop src="assets/dogrun.mp4"></video>
+    </div>
+
+    <nav class="navegar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="busqueda.html">Buscador de hogar</a></li>
+            <li><a href="ofrecerunhogar.html">Ofrecer un espacio</a></li>
+            <li><a href="transportar.html">Servicio de transporte</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header class="cabecera">
+            <h1 class="titulo">Buscador</h1>
+            <p class="descripcion">Accede al mejor hospedaje para tu compañero.</p>
+        </header>
+
+
+        <section class="contenido">
+            <h2>Define a tu mascota</h2>
+            <form action="https://avinews.com/wp-content/uploads/2023/05/0523-Cealvet-eclosion-1400x1200-1.jpg">
+                <fieldset>
+                    <legend>Tu mascota</legend>
+
+                    <label for="tipomascota">Tipo de mascota<select name="tipomascota">
+                            <optgroup label="Felinos">
+                                <option value="tipomascota1-1">Gato</option>
+                            </optgroup>
+                            <optgroup label="Cánidos">
+                                <option value="tipomascota2-1">Perro</option>
+                            </optgroup>
+                            <optgroup label="Mustelas">
+                                <option value="tipomascota3-1">Hurón</option>
+                            </optgroup>
+                            <optgroup label="Reptiles">
+                                <option value="tipomascota4-1">Iguana</option>
+                            </optgroup>
+                            <optgroup label="Roedores">
+                                <option value="tipomascota5-1">Conejos</option>
+                                <option value="tipomascota5-2">Chinchillas</option>
+                                <option value="tipomascota5-3">Hamsters</option>
+                            </optgroup>
+                            <optgroup label="Aves">
+                                <option value="tipomascota6-1">Loros</option>
+                                <option value="tipomascota6-2">Cotorras</option>
+                                <option value="tipomascota6-3">Pequeñas aves</option>
+                            </optgroup>
+                            <optgroup label="Equidos">
+                                <option value="tipomascota7-1">Caballo</option>
+                                <option value="tipomascota7-2">Pony</option>
+                            </optgroup>
+                            <optgroup label="Ovinos">
+                                <option value="tipomascota8-1">Ovejas</option>
+                            </optgroup>
+                            <optgroup label="Vacunos">
+                                <option value="tipomascota9-1">Vacas</option>
+                            </optgroup>
+                        </select></label>
+
+
+                    <button type="reset">Borrar</button>
+                    <button type="submit">Buscar</button>
+
+                </fieldset>
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <a href="legal.html">Legal</a>
+        <p>Mascota Canguro © 2026. Contenido libre de derechos | Imágenes y multimedia: pixabay.com</p>
+    </footer>
 </body>
+
 </html>
