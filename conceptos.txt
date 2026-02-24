@@ -21,4 +21,5 @@ casa.
 ----
 
 A través de méritos y reseñas, reduce las comisiones hasta un x%
+Si el servicio de transporte se inicia antes del fin de una reserva, se recupera el 50%
 
