@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/*
+palette
+0FA3B1 15, 163, 177
+B5E2FA 181, 226, 250
+F9F7F3 249, 247, 243
+EDDEA4 237, 222, 164
+rgb(32, 59, 110);
+*/
+
 html {
     height: 100%;
     overflow-y: scroll;
@@ -25,14 +34,12 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    /*calculo sin padding/border*/
     height: 100%;
     margin: 0;
-    /*con marco exterior o sin?*/
     font-family: 'Funnel Sans', sans-serif;
     font-size: clamp(16px, 4vw, 20px);
     line-height: 1.618rem;
-    color: #DDDBF1;
+    color: #F9F7F3;
 }
 
 
@@ -49,20 +56,18 @@ a {
     justify-content: center;
     gap: 1.618rem;
     color: #AB9F9D;
-    background-color: rgb(32, 59, 110);
+    background-color: rgba(60, 79, 118, 0.95);
     padding: 0.618rem 0.618rem;
     margin-top: 0px;
 }
 
-
 main {
-
     padding: 1rem;
 }
 
 .contenido,
 header {
-    background: rgba(129, 95, 1, 0.89);
+    background: rgba(15, 163, 177, 0.89);
     padding: 0.618rem 1.618rem;
     border-radius: 0.618rem;
     margin-top: 0.618rem;
@@ -70,11 +75,11 @@ header {
 
 h1,
 h2 {
-    color: rgba(252, 245, 234, 0.535);
+    color: rgb(181, 226, 250);
 }
 
 footer {
-    background: rgba(60, 79, 118, 0.95);
+    background: rgb(60, 79, 118);
     padding: 1.618rem;
     text-align: center;
     margin-top: auto;
@@ -108,11 +113,10 @@ footer p {
 
 .individual-card {
     width: 260px;
-    background-color: rgba(31, 148, 66, 0.932);
+    background-color: rgba(15, 163, 177, 0.932);
     font-size: clamp(1rem, 4vw, 1.2rem);
     border-radius: 12px;
     overflow: hidden;
-    border: rgba(0, 0, 0, 0.637) solid 3px;
     display: flex;
     flex-direction: column;
 }
@@ -121,7 +125,7 @@ footer p {
     width: 100%;
     height: clamp(150px, 25vw, 200px);
     object-fit: cover;
-    border-bottom: rgb(255, 255, 255) solid 3px;
+    border-bottom: rgba(0, 0, 0, 0.425) solid 3px;
 }
 
 .cards h3,
@@ -138,4 +142,10 @@ footer p {
 .cards p {
     margin: 0 0 0.5rem 0;
     font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+@media (max-width: 768px) {
+    .navegar ul {
+        flex-direction: column;
+    }
 }
