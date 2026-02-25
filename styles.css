@@ -93,8 +93,28 @@ footer p {
 }
 
 
-.card-container{
+.card-container {
     margin-top: 1.618rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.individual-card {
+    width: 260px;
+    background-color: rgba(31, 148, 66, 0.932);
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    border-radius: 12px;
+    overflow: hidden;
+    border: rgba(0, 0, 0, 0.637) solid 3px;
+    display: flex;
+    flex-direction: column;
 }
 
 .cards img {
@@ -104,18 +124,8 @@ footer p {
     border-bottom: rgb(255, 255, 255) solid 3px;
 }
 
-.cards {
-    width: 260px;
-    background-color: rgba(31, 148, 66, 0.932);
-    font-size: clamp(1rem, 4vw, 1.2rem);
-    border-radius: 12px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    border:rgba(0, 0, 0, 0.637) solid 3px;
-}
-
-.cards h3,.cards p {
+.cards h3,
+.cards p {
     padding: 0 0.618rem;
 }
 
