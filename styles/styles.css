@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    color: var(--color-E);
+}
+
+html {
+    height: 100%;
+    overflow-y: scroll;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+.bg {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: -2;
+
+    img,
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: 'Funnel Sans', sans-serif;
+    font-size: clamp(16px, 4vw, 20px);
+    line-height: 1.618rem;
+}
+
+a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+.navegar ul {
+    display: flex;
+    flex: 1 1 140px;
+    list-style: none;
+    white-space: nowrap;
+    justify-content: center;
+    gap: 1.618rem;
+    color: var(--color-C);
+    background-color: var(--color-A);
+    padding: var(--mp);
+    margin-top: 0px;
+}
+
+main {
+    padding: 1rem;
+}
+
+.cabecera,
+.contenido {
+    background: var(--color-C);
+    padding: var(--mp) var(--np);
+    border-radius: var(--mp);
+    margin-top: var(--mp);
+}
+
+h1,
+h2 {
+    color: var(--color-E);
+}
+
+/* footer */
+footer {
+    background: var(--color-A);
+    padding: var(--np);
+    text-align: center;
+    margin-top: auto;
+
+    a {
+        display: flexbox;
+        flex-direction: column;
+        margin: var(--mp) var(--np);
+        color: var(--color-C);
+        white-space: nowrap;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+/* footer */
+
+/*cards*/
+.card-container {
+    margin-top: 1.618rem;
+    display: flex;
+    justify-content: center;
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: clamp(150px, 25vw, 200px);
+            object-fit: cover;
+        }
+    }
+}
+
+.individual-card {
+    width: 260px;
+    background-color: var(--color-C);
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    border-radius: var(--mp);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /*animaciones*/
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+        transform: scale(1.011);
+        box-shadow: 0 3px 13px rgba(0, 0, 0, 0.618);
+    }
+
+    /*animaciones*/
+}
+
+.cards h3,
+.cards p {
+    padding: 0 var(--mp);
+    
+}
+
+.cards h3 {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    margin-bottom: 0.618rem;
+    margin-top: 0;
+    background-color: var(--color-D);
+    color: var(--color-A);
+    border-top: rgba(0, 0, 0, 0.425) solid 2px;
+    border-bottom: rgba(0, 0, 0, 0.425) solid 2px;
+}
+
+.cards p {
+    margin: 0 0 0.5rem 0;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+/*cards*/
+
+/*media resize*/
+@media (max-width: 768px) {
+    .navegar ul {
+        flex-direction: column;
+    }
+}

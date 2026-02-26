@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <link rel="stylesheet" href="styles/variables.css" type="text/css" />
+    <link rel="stylesheet" href="styles/styles.css" type="text/css" />
+    <link rel="stylesheet" href="styles/forms.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script src="scripts/main.js" defer></script>
@@ -13,9 +15,12 @@
 </head>
 
 <body>
+
     <div class="bg">
+        <div class="bg-transparency"></div>
         <img src="assets/images/perrogato01.jpg"></video>
     </div>
+
 
     <nav class="navegar">
         <ul>
@@ -32,41 +37,46 @@
             <p class="descripcion">Accede al mejor hospedaje para tu compañero.</p>
         </header>
 
-
         <section class="contenido">
             <h2>Define a tu mascota</h2>
             <form action="https://avinews.com/wp-content/uploads/2023/05/0523-Cealvet-eclosion-1400x1200-1.jpg">
                 <fieldset>
                     <legend>Tu mascota</legend>
+                    <div class="formulario">
+                        <label for="tipomascota">Tipo de mascota
+                            <select name="tipomascota">
+                                <optgroup label="Domésticos">
+                                    <option value="tipomascota1-1">Gato</option>
+                                    <option value="tipomascota1-2">Perro</option>
+                                    <option value="tipomascota1-3">Hurón</option>
+                                </optgroup>
+                                <optgroup label="Exóticos">
+                                    <option value="tipomascota2-1">Iguana</option>
+                                    <option value="tipomascota2-2">Conejos</option>
+                                    <option value="tipomascota2-3">Chinchillas</option>
+                                    <option value="tipomascota2-4">Hamsters</option>
+                                    <option value="tipomascota2-5">Loros</option>
+                                    <option value="tipomascota2-6">Cotorras</option>
+                                    <option value="tipomascota2-7">Pequeñas aves</option>
+                                </optgroup>
+                                <optgroup label="Granja">
+                                    <option value="tipomascota3-1">Caballo</option>
+                                    <option value="tipomascota3-2">Pony</option>
+                                    <option value="tipomascota3-3">Ovejas</option>
+                                    <option value="tipomascota3-4">Cabras</option>
+                                    <option value="tipomascota3-5">Vacas</option>
+                                </optgroup>
+                            </select>
+                        </label>
 
-                    <label for="tipomascota">Tipo de mascota<select name="tipomascota">
-                            <optgroup label="Domésticos">
-                                <option value="tipomascota1-1">Gato</option>
-                                <option value="tipomascota1-2">Perro</option>
-                                <option value="tipomascota1-3">Hurón</option>
-                            </optgroup>
-                            <optgroup label="Exóticos">
-                                <option value="tipomascota2-1">Iguana</option>
-                                <option value="tipomascota2-2">Conejos</option>
-                                <option value="tipomascota2-3">Chinchillas</option>
-                                <option value="tipomascota2-4">Hamsters</option>
-                                <option value="tipomascota2-5">Loros</option>
-                                <option value="tipomascota2-6">Cotorras</option>
-                                <option value="tipomascota2-7">Pequeñas aves</option>
-                            </optgroup>
-                            <optgroup label="Granja">
-                                <option value="tipomascota3-1">Caballo</option>
-                                <option value="tipomascota3-2">Pony</option>
-                                <option value="tipomascota3-3">Ovejas</option>
-                                <option value="tipomascota3-4">Cabras</option>
-                                <option value="tipomascota3-5">Vacas</option>
-                            </optgroup>
-                        </select>
-                    </label>
+                        <label for="ubicacion">Ubicación</label>
+                        <input type="text" id="ubicacion" name="ubicacion" placeholder="Busca cerca de aquí...">
 
-                    <label for="ubicacion">Ubicación</label>
-                    <input type="text">
-
+                        <label for="fecha-entrada">Fecha de entrada</label>
+                        <input type="date" id="fecha-entrada" name="fecha-entrada" value="2026-02-25">
+                        <label for="fecha-salida">Fecha de salida</label>
+                        <input type="date" id="fecha-salida" name="fecha-salida">
+                    </div>
                     <button type="reset">Borrar</button>
                     <button type="submit">Buscar</button>
 
