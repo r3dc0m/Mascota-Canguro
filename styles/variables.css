@@ -1,9 +1,21 @@
-:root {
-    --color-A: #0e7955;
-    --color-B: #0FA3B1;
-    --color-C: #c7b87f;
+/*
+#e1b07e, #ccff66, #587291, #171738, #ee92c2
+
+    --color-A: #08724fd3;
+    --color-B: #0fb17b;
+    --color-C: #b9b192e6;
     --color-D: #b5fac6;
     --color-E: #F9F7F3;
+*/
+
+
+
+:root {
+    --color-C: #e1b07e;
+    --color-E: #e1f9b1;
+    --color-B: #587291;
+    --color-A: #2d2d5a;
+    --color-D: #ee92c2;
     --np: 1.618rem;
     --mp: 0.618rem;
 }

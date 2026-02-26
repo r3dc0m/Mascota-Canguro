@@ -1,11 +1,20 @@
-.formulario {
-    display: flex;
-    flex-direction: column;
-    label {
-        margin-top: var(--mp);
+fieldset {
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        label {
+            margin-top: var(--mp);
+        }
+        optgroup {
+
+        }
     }
+    margin-bottom: var(--mp);
 }
 
-button {
+.botones {
     margin-top: var(--np);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
 }
