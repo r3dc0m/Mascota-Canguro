@@ -12,6 +12,12 @@ main {
     color: var(--color-E);
 }
 
+.max-container {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
 details>summary {
     list-style: none;
 }
@@ -86,10 +92,10 @@ h2 {
     justify-content: center;
 
     .cards {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: var(--np);
+        width: 100%;
 
         img {
             width: 100%;
@@ -100,16 +106,15 @@ h2 {
 }
 
 .individual-card {
-    width: 260px;
+    min-width: 220px;
     background-color: var(--color-C);
     font-size: clamp(1rem, 4vw, 1.2rem);
     border-radius: var(--mp);
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    /*animaciones*/
+    /*animación*/
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-
     &:hover {
         transform: scale(1.011);
         box-shadow: 0 3px 13px var(--color-A);

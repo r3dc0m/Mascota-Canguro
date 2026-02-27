@@ -6,16 +6,22 @@
     --color-C: #b9b192e6;
     --color-D: #b5fac6;
     --color-E: #F9F7F3;
+
+    --color-A: #2d2d5a;
+    --color-B: #587291;
+    --color-C: #e1b07e;
+    --color-D: #ee92c2;
+    --color-E: #e1f9b1;
 */
 
 
 
 :root {
-    --color-C: #e1b07e;
-    --color-E: #e1f9b1;
-    --color-B: #587291;
-    --color-A: #2d2d5a;
-    --color-D: #ee92c2;
+    --color-A: #08724fd3;
+    --color-B: #0fb17b;
+    --color-C: #cea47b;
+    --color-D: #b5fac6;
+    --color-E: #F9F7F3;
     --np: 1.618rem;
     --mp: 0.618rem;
 }

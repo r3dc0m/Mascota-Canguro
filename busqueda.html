@@ -22,10 +22,7 @@
     </div>
 
     <nav class="navegar">
-
-
         <ul>
-
             <li><a href="index.html">Inicio</a></li>
             <li><a href="busqueda.html">Buscador de hogar</a></li>
             <li><a href="ofrecerunhogar.html">Ofrecer un espacio</a></li>
@@ -34,89 +31,92 @@
     </nav>
 
     <main>
-        <header class="cabecera">
+        <div class="max-container"">
+        <header class=" cabecera">
             <h1 class="titulo">Buscador</h1>
             <p class="descripcion">Accede al mejor hospedaje para tu compañero.</p>
-        </header>
+            </header>
 
-        <section class="contenido">
-            <h2>Define a tu mascota</h2>
-            <form action="https://avinews.com/wp-content/uploads/2023/05/0523-Cealvet-eclosion-1400x1200-1.jpg">
-                <fieldset>
-                    <legend>Tu mascota</legend>
-                    <div class="formulario">
-                        <label for="tipomascota">Tipo de mascota
-                            <select name="tipomascota">
-                                <optgroup label="Domésticos">
-                                    <option value="tipomascota1-1">Gato</option>
-                                    <option value="tipomascota1-2">Perro</option>
-                                    <option value="tipomascota1-3">Hurón</option>
-                                </optgroup>
-                                <optgroup label="Exóticos">
-                                    <option value="tipomascota2-1">Iguana</option>
-                                    <option value="tipomascota2-2">Conejos</option>
-                                    <option value="tipomascota2-3">Chinchillas</option>
-                                    <option value="tipomascota2-4">Hamsters</option>
-                                    <option value="tipomascota2-5">Loros</option>
-                                    <option value="tipomascota2-6">Cotorras</option>
-                                    <option value="tipomascota2-7">Pequeñas aves</option>
-                                </optgroup>
-                                <optgroup label="Granja">
-                                    <option value="tipomascota3-1">Caballo</option>
-                                    <option value="tipomascota3-2">Pony</option>
-                                    <option value="tipomascota3-3">Ovejas</option>
-                                    <option value="tipomascota3-4">Cabras</option>
-                                    <option value="tipomascota3-5">Vacas</option>
-                                </optgroup>
-                            </select>
-                        </label>
+            <section class="contenido">
+                <h2>Define a tu mascota</h2>
+                <form action="https://avinews.com/wp-content/uploads/2023/05/0523-Cealvet-eclosion-1400x1200-1.jpg">
+                    <fieldset>
+                        <legend>Tu mascota</legend>
+                        <div class="formulario">
+                            <label for="tipomascota">Tipo de mascota
+                                <select name="tipomascota">
+                                    <optgroup label="Domésticos">
+                                        <option value="tipomascota1-1">Gato</option>
+                                        <option value="tipomascota1-2">Perro</option>
+                                        <option value="tipomascota1-3">Hurón</option>
+                                    </optgroup>
+                                    <optgroup label="Exóticos">
+                                        <option value="tipomascota2-1">Iguana</option>
+                                        <option value="tipomascota2-2">Conejos</option>
+                                        <option value="tipomascota2-3">Chinchillas</option>
+                                        <option value="tipomascota2-4">Hamsters</option>
+                                        <option value="tipomascota2-5">Loros</option>
+                                        <option value="tipomascota2-6">Cotorras</option>
+                                        <option value="tipomascota2-7">Pequeñas aves</option>
+                                    </optgroup>
+                                    <optgroup label="Granja">
+                                        <option value="tipomascota3-1">Caballo</option>
+                                        <option value="tipomascota3-2">Pony</option>
+                                        <option value="tipomascota3-3">Ovejas</option>
+                                        <option value="tipomascota3-4">Cabras</option>
+                                        <option value="tipomascota3-5">Vacas</option>
+                                    </optgroup>
+                                </select>
+                            </label>
 
-                        <label for="ubicacion">Ubicación</label>
-                        <input type="text" id="ubicacion" name="ubicacion" placeholder="Busca cerca de aquí...">
+                            <label for="ubicacion">Ubicación</label>
+                            <input type="text" id="ubicacion" name="ubicacion" placeholder="Busca cerca de aquí...">
 
-                        <label for="fecha-entrada">Fecha de entrada</label>
-                        <input type="date" id="fecha-entrada" name="fecha-entrada" value="2026-02-25">
-                        <label for="fecha-salida">Fecha de salida</label>
-                        <input type="date" id="fecha-salida" name="fecha-salida">
-                    </div>
-                    <div class="botones">
-                        <button type="reset">Borrar</button>
-                        <button type="submit">Buscar</button>
-                    </div>
-                </fieldset>
-            </form>
-        </section>
-
-        <div class="card-container">
-            <section class="cards">
-                <article class="individual-card">
-                    <img src="assets/images/yard01.jpg" alt="picture of a yard">
-                    <h3>Finca 1000m<sup>2</sup></h3>
-                    <p>Ideal para: bovinos, ovinos, equidos.</p>
-                    <p>Ubicación: Pirineo oriental.</p>
-                </article>
-
-                <article class="individual-card">
-                    <img src="assets/images/cows01.jpg" alt="picture of a yard">
-                    <h3>Establo 320m<sup>2</sup></h3>
-                    <p>Ideal para: bovinos, ovinos, equidos.</p>
-                    <p>Ubicación: Durango.</p>
-                </article>
-
-                <article class="individual-card">
-                    <img src="assets/images/gallos01.jpg" alt="picture of a yard">
-                    <h3>Casa de campo 140m<sup>2</sup></h3>
-                    <p>Ideal para: perros, gatos, conejos.</p>
-                    <p>Ubicación: Santander.</p>
-                </article>
-
-                <article class="individual-card">
-                    <img src="assets/images/hamster01.jpg" alt="picture of a yard">
-                    <h3>Casetas roedores 15m<sup>2</sup></h3>
-                    <p>Ideal para: hamsters, chinchillas, conejos.</p>
-                    <p>Ubicación: Asturias.</p>
-                </article>
+                            <label for="fecha-entrada">Fecha de entrada</label>
+                            <input type="date" id="fecha-entrada" name="fecha-entrada" value="2026-02-25">
+                            <label for="fecha-salida">Fecha de salida</label>
+                            <input type="date" id="fecha-salida" name="fecha-salida">
+                        </div>
+                        <div class="botones">
+                            <button type="reset">Borrar</button>
+                            <button type="submit">Buscar</button>
+                        </div>
+                    </fieldset>
+                </form>
             </section>
+
+            <div class="card-container">
+                <section class="cards">
+                    <article class="individual-card">
+                        <img src="assets/images/yard01.jpg" alt="picture of a yard">
+                        <h3>Finca 1000m<sup>2</sup></h3>
+                        <p>Ideal para: bovinos, ovinos, equidos.</p>
+                        <p>Ubicación: Pirineo oriental.</p>
+                    </article>
+
+                    <article class="individual-card">
+                        <img src="assets/images/cows01.jpg" alt="picture of a yard">
+                        <h3>Establo 320m<sup>2</sup></h3>
+                        <p>Ideal para: bovinos, ovinos, equidos.</p>
+                        <p>Ubicación: Durango.</p>
+                    </article>
+
+                    <article class="individual-card">
+                        <img src="assets/images/gallos01.jpg" alt="picture of a yard">
+                        <h3>Casa de campo 140m<sup>2</sup></h3>
+                        <p>Ideal para: perros, gatos, conejos.</p>
+                        <p>Ubicación: Santander.</p>
+                    </article>
+
+                    <article class="individual-card">
+                        <img src="assets/images/hamster01.jpg" alt="picture of a yard">
+                        <h3>Casetas roedores 15m<sup>2</sup></h3>
+                        <p>Ideal para: hamsters, chinchillas, conejos.</p>
+                        <p>Ubicación: Asturias.</p>
+                    </article>
+                </section>
+            </div>
+
         </div>
     </main>
 
