@@ -94,7 +94,7 @@ h2 {
     .cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: var(--np);
+        gap: var(--mp);
         width: 100%;
 
         img {
