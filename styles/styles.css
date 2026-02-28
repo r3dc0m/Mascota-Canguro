@@ -14,7 +14,6 @@ main {
 
 .max-container {
     width: 100%;
-    max-width: 1200px;
     margin-inline: auto;
 }
 
@@ -38,6 +37,7 @@ details>summary {
         opacity: 33%;
     }
 }
+
 /*background*/
 
 body {
@@ -59,6 +59,7 @@ a {
     ul {
         display: flex;
         flex: 1 1 140px;
+        flex-direction: column;
         list-style: none;
         white-space: nowrap;
         justify-content: center;
@@ -102,6 +103,24 @@ h2 {
             height: clamp(150px, 25vw, 200px);
             object-fit: cover;
         }
+
+        h3,
+        p {
+            padding: 0 var(--mp);
+        }
+
+        h3 {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            margin-bottom: var(--mp);
+            margin-top: 0;
+            background-color: var(--color-E);
+            color: var(--color-A);
+        }
+
+        p {
+            margin: 0 0 var(--mp) 0;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
+        }
     }
 }
 
@@ -115,28 +134,11 @@ h2 {
     flex-direction: column;
     /*animación*/
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+
     &:hover {
         transform: scale(1.011);
         box-shadow: 0 3px 13px var(--color-A);
     }
-}
-
-.cards h3,
-.cards p {
-    padding: 0 var(--mp);
-}
-
-.cards h3 {
-    font-size: clamp(1rem, 3vw, 1.2rem);
-    margin-bottom: var(--mp);
-    margin-top: 0;
-    background-color: var(--color-E);
-    color: var(--color-A);
-}
-
-.cards p {
-    margin: 0 0 var(--mp) 0;
-    font-size: clamp(0.9rem, 2.5vw, 1rem);
 }
 /*cards*/
 
@@ -164,8 +166,12 @@ footer {
 /* footer */
 
 /*media resize*/
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .navegar ul {
-        flex-direction: column;
+        flex-direction: row;
+    }
+
+    .max-container {
+        max-width: 61.8vw;
     }
 }
