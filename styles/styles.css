@@ -71,7 +71,7 @@ a {
     }
 }
 
-.cabecera,
+.titulo, .descripcion,
 .contenido {
     background: var(--color-C);
     padding: var(--mp) var(--np);
