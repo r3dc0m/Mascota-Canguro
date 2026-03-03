@@ -89,7 +89,7 @@ body {
     margin-top: var(--mp);
 }
 
-.h-title {
+.headers-title {
     margin-block-start: var(--mp);
     color: var(--color-E);
     font-size: var(--np);

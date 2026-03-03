@@ -1,20 +1,21 @@
-fieldset {
-    .formulario {
+.form-container {
+    label {
+        margin-top: var(--mp);
+    }
+
+    optgroup {}
+
+    fieldset {
         display: flex;
         flex-direction: column;
-        label {
-            margin-top: var(--mp);
-        }
-        optgroup {
-
-        }
+        margin-bottom: var(--mp);
     }
-    margin-bottom: var(--mp);
 }
+
 
 .botones {
     margin-top: var(--np);
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
 }
