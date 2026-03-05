@@ -17,11 +17,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-    --color-A: #08724fd3;
-    --color-B: #0fb17b;
-    --color-C: #cea57bd7;
+    --color-E: #033a28e3;
+    --color-D: #0f523b;
+    --color-C: #f5ddc6d7;
+    --color-B: #b5fac6;
+    --color-A: #F9F7F3;
+
+    @media (prefers-color-scheme: dark) {
+    --color-A: #033a28e3;
+    --color-B: #0f523b;
+    --color-C: #7c552ed7;
     --color-D: #b5fac6;
     --color-E: #F9F7F3;
+}
     --np: 1.618rem;
     --mp: 0.618rem;
 }
+

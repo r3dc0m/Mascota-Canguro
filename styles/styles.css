@@ -87,13 +87,21 @@ body {
         transform: translateY(55px);
         background-color: var(--color-A);
         border-radius: 50%;
+        z-index: 1;
     }
+
 
     .menu-toggle:checked+.hamburger+.navigate {
         display: block;
+        position: fixed;
+        width: fit-content;
+        padding: var(--mp) var(--np);
+        border-radius: var(--mp);
+        transform: translateY(144px);
+        background-color: var(--color-A);
 
         ul {
-            flex-direction: row;
+            justify-items: left;
             align-items: center;
             padding: var(--mp) 0;
         }
@@ -229,6 +237,28 @@ footer {
                 flex-direction: row;
                 justify-content: center;
                 gap: var(--np);
+                margin-left: var(--mp);
+                margin-right: var(--mp);
+            }
+        }
+
+        .menu-toggle:checked+.hamburger+.navigate {
+            position:unset;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            border-radius: 0;
+            transform: translateY(0);
+            background-color:rgba(255, 255, 255, 0);
+
+            ul {
+                display: flex;
+                flex: 1 1 140px;
+                flex-direction: row;
+                justify-content: center;
+                gap: var(--np);
+                margin-left: var(--mp);
+                margin-right: var(--mp);
             }
         }
     }
