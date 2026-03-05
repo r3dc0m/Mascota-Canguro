@@ -69,12 +69,12 @@
                 <div class="form-container">
                     <form action="https://avinews.com/wp-content/uploads/2023/05/0523-Cealvet-eclosion-1400x1200-1.jpg"
                         target="_blank">
-                        <fieldset>
+                        <fieldset class="pet-fieldset">
                             <legend>Tu(s) mascota(s)</legend>
 
                             <label for="tipomascota">Añadir mascota
                                 <select name="tipomascota">
-                                    <option value="" disabled selected>Selecciona un tipo de mascota</option>
+                                    <option value="" disabled selected>Selecciona tu mascota</option>
                                     <optgroup label="Domésticos">
                                         <option value="tipomascota1-1">Gato</option>
                                         <option value="tipomascota1-2">Perro</option>
@@ -99,9 +99,11 @@
                                 </select>
                             </label>
 
-                            <label for="petNumber">Número de mascotas
+                            <label for="petNumber">Cuántas mascotas
                                 <input type="number" name="petNumber" min="1" max="99" placeholder="1">
                             </label>
+
+                            <button type="button" class="addpet">Añadir mascota</button>
                         </fieldset>
 
                         <fieldset>
@@ -133,10 +135,25 @@
                             <h3>Finca</h3>
                             <p>13€/noche</p>
                         </div>
-                        <p>Ideal para: bovinos, ovinos, equidos.</p>
+                        <p>Ideal para: vacas, ovejas, caballos.</p>
                         <p>Ubicación: Pirineo oriental.</p>
                         <div class="card-footer-distribution">
-                            <span>★ ★ ★ ★ ☆</span>
+                            <span>★ ★ ★ ☆ ☆</span>
+                            <button class="card-button">Ver disponibilidad</button>
+                        </div>
+                    </article>
+
+                    <article class="individual-card">
+                        <img src="assets/images/birds01.jpg" alt="picture of a bird cage">
+                        <div class="card-title-distribution">
+                            <p>2m<sup>2</sup></p>
+                            <h3>Aviar</h3>
+                            <p>3€/noche</p>
+                        </div>
+                        <p>Ideal para: aves pequeñas.</p>
+                        <p>Ubicación: Bilbao.</p>
+                        <div class="card-footer-distribution">
+                            <span>★ ★ ★ ★ ★</span>
                             <button class="card-button">Ver disponibilidad</button>
                         </div>
                     </article>
@@ -145,10 +162,10 @@
                         <img src="assets/images/cows01.jpg" alt="picture of a cow">
                         <div class="card-title-distribution">
                             <p>377m<sup>2</sup></p>
-                            <h3>Establo </h3>
+                            <h3>Establo</h3>
                             <p>5€/noche</p>
                         </div>
-                        <p>Ideal para: bovinos, ovinos, equidos.</p>
+                        <p>Ideal para: vacas, ovejas, caballos.</p>
                         <p>Ubicación: Durango.</p>
                         <div class="card-footer-distribution">
                             <span>★ ★ ★ ★ ☆</span>
@@ -157,10 +174,25 @@
                     </article>
 
                     <article class="individual-card">
+                        <img src="assets/images/room01.jpg" alt="picture of a room">
+                        <div class="card-title-distribution">
+                            <p>55m<sup>2</sup></p>
+                            <h3>Habitación</h3>
+                            <p>8€/noche</p>
+                        </div>
+                        <p>Ideal para: gatos, perros, aves pequeñas.</p>
+                        <p>Ubicación: Barakaldo.</p>
+                        <div class="card-footer-distribution">
+                            <span>★ ☆ ☆ ☆ ☆</span>
+                            <button class="card-button">Ver disponibilidad</button>
+                        </div>
+                    </article>
+
+                    <article class="individual-card">
                         <img src="assets/images/gallos01.jpg" alt="picture of a piled domestic animals">
                         <div class="card-title-distribution">
                             <p>144m<sup>2</sup></p>
-                            <h3>Casa de campo </h3>
+                            <h3>Casa de campo</h3>
                             <p>8€/noche</p>
                         </div>
                         <p>Ideal para: perros, gatos, conejos.</p>
@@ -181,7 +213,7 @@
                         <p>Ideal para: hamsters, chinchillas, conejos.</p>
                         <p>Ubicación: Gijón.</p>
                         <div class="card-footer-distribution">
-                            <span>★ ★ ★ ★ ☆</span>
+                            <span>★ ★ ★ ★ ★</span>
                             <button class="card-button">Ver disponibilidad</button>
                         </div>
                     </article>

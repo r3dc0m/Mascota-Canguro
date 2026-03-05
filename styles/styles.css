@@ -58,8 +58,8 @@ button {
     padding: 0.34rem;
 }
 
-.card-button{
-border-radius: var(--mp) 0 var(--mp) 0;
+.card-button {
+    border-radius: var(--mp) 0 var(--mp) 0;
 }
 
 .header {
@@ -77,7 +77,8 @@ border-radius: var(--mp) 0 var(--mp) 0;
     }
 
     .brand {
-        fill: var(--color-E);
+        display: none;
+
     }
 
     .auth {
@@ -98,6 +99,7 @@ border-radius: var(--mp) 0 var(--mp) 0;
         cursor: pointer;
         position: fixed;
         transform: translateY(55px);
+        left: 0;
         background-color: var(--color-A);
         border-radius: 50%;
         z-index: 1;
@@ -107,10 +109,12 @@ border-radius: var(--mp) 0 var(--mp) 0;
     .menu-toggle:checked+.hamburger+.navigate {
         display: block;
         position: fixed;
+        cursor: pointer;
         width: fit-content;
-        padding: var(--mp) var(--np);
-        border-radius: var(--mp);
+        padding: 0 var(--mp);
+        border-radius: 0 var(--mp) var(--mp) 0;
         transform: translateY(144px);
+        left: 0;
         background-color: var(--color-A);
 
         ul {
@@ -169,7 +173,7 @@ border-radius: var(--mp) 0 var(--mp) 0;
 
         .card-title-distribution {
             display: inline-flex;
-            align-items: center;
+            align-items: baseline;
             justify-content: space-between;
             margin-bottom: var(--mp);
             font-size: 1rem;
@@ -197,6 +201,7 @@ border-radius: var(--mp) 0 var(--mp) 0;
             overflow: hidden;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
 
             /* animation */
             @media (hover: hover) and (pointer: fine) {
@@ -243,6 +248,11 @@ footer {
         align-items: center;
         justify-content: space-between;
 
+        .brand {
+            display: block;
+            fill: var(--color-E);
+        }
+
         .hamburger {
             display: none;
         }
@@ -263,7 +273,6 @@ footer {
         }
 
         .menu-toggle:checked+.hamburger+.navigate {
-            position: unset;
             display: flex;
             justify-content: space-between;
             padding: 0;
@@ -283,12 +292,16 @@ footer {
         }
     }
 
-
-
     .auth {
         justify-content: flex-end;
     }
 
+    .max-container {
+        max-width: 89.0vw;
+    }
+}
+
+@media (min-width: 1024px) {
     .max-container {
         max-width: 61.8vw;
     }

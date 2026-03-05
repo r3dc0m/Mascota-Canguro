@@ -8,6 +8,14 @@
         flex-direction: column;
         margin-bottom: var(--mp);
     }
+
+    .pet-fieldset {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: var(--mp);
+        align-items: baseline ;
+        justify-content: space-evenly;
+    }
 }
 
 .buttons {
