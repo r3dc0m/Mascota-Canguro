@@ -3,8 +3,6 @@
         margin-top: var(--mp);
     }
 
-    optgroup {}
-
     fieldset {
         display: flex;
         flex-direction: column;
@@ -12,10 +10,10 @@
     }
 }
 
-
-.botones {
-    margin-top: var(--np);
+.buttons {
+    padding: var(--mp);
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    gap: 1rem;
+    display: flex;
+    justify-content: flex-end;
 }
