@@ -158,10 +158,12 @@ body {
             padding: 0 var(--mp);
         }
 
-        h3 {
-            font-size: clamp(1rem, 3vw, 1.2rem);
+        .card-title-distribution {
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
             margin-bottom: var(--mp);
-            margin-top: 0;
+            font-size: clamp(1rem, 3vw, 1.2rem);
             background-color: var(--color-E);
             color: var(--color-A);
         }
