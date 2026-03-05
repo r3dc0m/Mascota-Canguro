@@ -27,6 +27,7 @@ main {
             opacity: 33%;
         }
     }
+
     /*background*/
 
     /*body capsule*/
@@ -34,6 +35,7 @@ main {
         width: 100%;
         margin-inline: auto;
     }
+
     /*body capsule*/
 }
 
@@ -50,6 +52,7 @@ body {
 .header {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     padding: var(--mp);
     background: var(--color-A);
@@ -60,17 +63,47 @@ body {
         white-space: nowrap;
     }
 
+    .brand {
+        fill: var(--color-E);
+    }
+
     .auth {
         display: flex;
         gap: var(--mp);
     }
 
+    .menu-toggle {
+        display: none;
+    }
+
+    .hamburger {
+        width: 34px;
+        height: 34px;
+        align-content: center;
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        transform: translateY(55px);
+        background-color: var(--color-A);
+        border-radius: 50%;
+    }
+
+    .menu-toggle:checked+.hamburger+.navigate {
+        display: block;
+
+        ul {
+            flex-direction: row;
+            align-items: center;
+            padding: var(--mp) 0;
+        }
+    }
+
     .navigate {
+        display: none;
         width: 100%;
 
         ul {
-            display: flex;
-            flex: 1 1 140px;
             flex-direction: column;
             list-style: none;
             align-items: center;
@@ -181,19 +214,26 @@ footer {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-    }
 
-    .navigate {
-        flex: 1;
-        display: flex;
-        justify-content: center;
+        .hamburger {
+            display: none;
+        }
 
-        ul {
-            flex-direction: row;
+        .navigate {
+            display: flex;
             justify-content: center;
-            gap: var(--np);
+
+            ul {
+                display: flex;
+                flex: 1 1 140px;
+                flex-direction: row;
+                justify-content: center;
+                gap: var(--np);
+            }
         }
     }
+
+
 
     .auth {
         justify-content: flex-end;

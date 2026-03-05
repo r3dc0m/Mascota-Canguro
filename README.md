@@ -11,6 +11,7 @@ Según el sistema de reservas, su cuantía y/o calidad, la cuota del propietario
 La vista principal describe de forma breve cual es el servicio que ofrece la página web y ésta compone la página de inicio.
 * **index.html:** Descripción de los servicios.
 * **search.html:** Interfaz principal de búsqueda.
+* **spaces.html:** Interfaz principal de oferta de espacios.
 * **services.html:** Otros servicios.
 ## Tecnologías Utilizadas
 * HTML5
