@@ -41,10 +41,12 @@ main {
 body {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 100%;
     margin: 0;
     font-family: 'Funnel Sans', sans-serif;
     line-height: var(--np);
+
 }
 
 h3 {
@@ -77,8 +79,7 @@ button {
     }
 
     .brand {
-        display: none;
-
+        fill: var(--color-E);
     }
 
     .auth {
@@ -248,11 +249,6 @@ footer {
         align-items: center;
         justify-content: space-between;
 
-        .brand {
-            display: block;
-            fill: var(--color-E);
-        }
-
         .hamburger {
             display: none;
         }
@@ -273,6 +269,7 @@ footer {
         }
 
         .menu-toggle:checked+.hamburger+.navigate {
+            position: unset;
             display: flex;
             justify-content: space-between;
             padding: 0;
